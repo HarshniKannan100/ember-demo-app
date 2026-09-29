@@ -1,0 +1,14 @@
+{{page-title "AddPost"}}
+<div class="create-post">
+    <h2>Create a new post</h2>
+    <label>
+        Title: <Input {{autofocus}} @value={{this.title}}/>
+    </label>
+
+    <label>
+        Content: <Textarea @value={{this.content}}/>
+    </label>
+
+    <button class="post-btn" type="button" {{on "click" this.postFunction}}>Post</button>
+    {{outlet}}
+</div>

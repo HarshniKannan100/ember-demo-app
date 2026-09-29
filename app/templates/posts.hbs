@@ -1,0 +1,21 @@
+{{page-title "Posts"}}
+
+<h2>Posts</h2>
+
+<Tab @bgcolor="pink" @fcolor="purple" @name="posts"/>
+
+<LinkTo class="btn btn-primary add-post-btn" @route="add-post">Add Post</LinkTo>
+
+
+<div>
+    {{#let this.postsService.allPosts.length as |nop|}}
+    <p>Number of posts: {{nop}}</p>
+    <p>{{@model.key}}</p>
+    {{#each this.postsService.allPosts as |post|}}
+        <Posts @title={{full-caps post.title}} @content={{post.content}} @id={{post.index}}/>
+    {{/each}}
+    {{/let}}
+</div>
+
+
+{{outlet}}

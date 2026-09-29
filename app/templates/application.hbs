@@ -1,7 +1,9 @@
 {{page-title "EmberApp3"}}
-
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
-
+<div>
+    <nav class="nav-bar">
+        <LinkTo @route="index" class="nav-routes">Home</LinkTo>
+        <LinkTo @route="about" class="nav-routes">About</LinkTo>
+        <LinkTo @route="posts" class="nav-routes">Posts</LinkTo>
+    </nav>
+</div>
 {{outlet}}

@@ -1,0 +1,78 @@
+
+.nav-bar{
+    background-color: rgb(224, 45, 35);
+    height: 100px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    position: relative;
+}
+
+.tab-box{
+    width:100px;
+    display:flex;  
+    justify-content:center; 
+    right:10px;
+    top:10px;
+    margin-top:10px;
+    position: absolute;
+}
+
+
+
+.nav-routes{
+    background-color:rgba(223, 155, 211, 0.674);
+    text-decoration: none;
+    color:white;
+    width:70px;
+    text-align: center;
+    margin-left: 30px;
+}
+
+.add-post-btn{
+    margin:30px;
+    position: fixed;
+    right:0;
+    bottom :20px;    
+}
+
+.post{
+    background-color: rgba(223, 155, 211, 0.674);
+    color: white;
+    width:500px;
+    min-height:100px; 
+    margin: 10px;
+}
+
+.create-post{
+    padding: 30px;
+    background-color: rgba(228, 196, 70, 0.674);
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    width: 500px;
+    margin: 40px;
+}
+
+.post-btn{
+    width: 100px;
+    margin-left:20px;
+    background-color: rgb(88, 222, 177);
+}   
+
+.pop-up {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-modal {
+    background: white;
+    padding: 30px;
+    width: 500px;
+    border-radius: 10px;
+}
