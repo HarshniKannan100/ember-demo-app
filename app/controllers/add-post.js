@@ -16,7 +16,7 @@ export default class PostsAddPostController extends Controller {
       {
         title: this.title,
         content: this.content,
-        index:this.postsService.allPosts.length+1
+        index: this.postsService.allPosts.length + 1,
       },
     ];
     this.title = '';
