@@ -1,6 +1,14 @@
-<div>
+<div class="demo">
     <h2>{{this.content}}</h2>
     <h3>{{@content}}</h3>
-    <p>{{yield}}{{@value}}</p>
+
+
+    <h3>{{yield}}</h3>
+
+    <p>{{yield to="header"}}</p>
+    <p>{{yield to="content"}} {{@value}}</p>
+    <p>{{yield to="footer"}}</p>
+
     <button {{on "click" this.func}}>Button</button>
+
 </div>
